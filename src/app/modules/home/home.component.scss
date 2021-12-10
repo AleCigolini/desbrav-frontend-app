@@ -1,3 +1,27 @@
-.example-spacer {
-  flex: 1 1 auto;
-}
+.primary {
+  width: 100vw;
+  height: 100vh;
+  background: #6C7A89;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  .card-login {
+    mat-card {
+      min-width: 350px;
+      min-height: 350px;
+      mat-card-actions {
+        margin-top: 70px;
+      }
+    }
+    .input {
+      margin-left: 50px;
+      margin-top: 30px;
+    }
+    .inputTwo {
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+

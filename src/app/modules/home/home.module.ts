@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { DesbravGenericButtonModule } from 'src/app/shared/components/desbrav-generic-button/desbrav-generic-button.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
@@ -13,8 +13,8 @@ import { HomeComponent } from './home.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatToolbarModule,
-    MatIconModule
+    SharedModule,
+    DesbravGenericButtonModule
   ],
   exports: [HomeComponent]
 })

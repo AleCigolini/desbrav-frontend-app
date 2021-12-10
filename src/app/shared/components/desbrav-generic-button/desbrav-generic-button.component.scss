@@ -1,0 +1,147 @@
+@import '../../../layouts/variables.scss';
+
+.main-action-button::ng-deep {
+  display: flex;
+  border-radius: 25px;
+
+  .main-button {
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 25px;
+
+    mat-icon {
+      &.externalLink {
+        color: $brand-cancel;
+        margin: 0;
+        margin-left: 5px;
+      }
+    }
+
+    .mat-button-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .main-button,
+  .expand-more-button {
+    mat-icon {
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    &.main {
+      background: $brand-secondary;
+      color: $brand-primary;
+      mat-icon {
+        color: $brand-primary;
+
+        &.externalLink {
+          color: $brand-cancel;
+          margin: 0;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &.save {
+      background: $brand-primary;
+      color: $brand-secondary;
+      mat-icon {
+        color: $brand-secondary;
+      }
+    }
+
+    &.delete {
+      background: $brand-delete;
+      color: $brand-secondary;
+      mat-icon {
+        color: $brand-secondary;
+      }
+    }
+
+    &.cancel {
+      background: $brand-cancel;
+      color: $brand-secondary;
+      mat-icon {
+        color: $brand-secondary;
+      }
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+.expand-more-button-active::ng-deep {
+  button.expand-more-button {
+    margin: 0 !important;
+  }
+
+  .main-button {
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-right: 10px;
+  }
+
+  .expand-more-button {
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 0;
+    border-left: 1px solid $brand-secondary;
+    outline: none;
+
+    mat-icon {
+      margin-right: 0;
+    }
+  }
+
+  .container-expand-more-button {
+    position: relative;
+
+    .menu-expand-more {
+      position: absolute;
+      bottom: 40px;
+      right: 0;
+      white-space: nowrap;
+      background: $brand-back-modal;
+      z-index: 10;
+      width: auto;
+      text-align: center;
+      padding: 16px;
+      border-radius: 3px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          display: flex;
+          white-space: nowrap;
+          font-size: 14px;
+          font-weight: $font-medium;
+          cursor: pointer;
+
+          mat-icon {
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

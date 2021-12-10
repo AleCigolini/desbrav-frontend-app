@@ -1,15 +1,28 @@
-<p>
-  <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
-  </mat-toolbar>
-</p>
+<div class="primary">
+  <div class="card-login">
+    <mat-card>
+      <mat-card-title>Acessar sistema</mat-card-title>
+      <div class="row input">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Login</mat-label>
+          <input matInput type="text">
+          <button matSuffix mat-icon-button>
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="row inputTwo">
+        <mat-form-field class="example-form-field" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="text">
+          <button matSuffix mat-icon-button>
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <mat-card-actions align="end">
+        <button mat-raised-button color="primary">Entrar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
