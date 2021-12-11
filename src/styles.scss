@@ -9,6 +9,11 @@
 /* Importing Datepicker SCSS file. */
 @import "~ngx-bootstrap/datepicker/bs-datepicker";
 
+@font-face {
+  font-family: "Fonarto";
+  src: local("Fonarto"), url(./assets/fonts/Fonarto.otf) format("truetype");
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+body { margin: 0; font-family: Fonarto, "Helvetica Neue", sans-serif;}
 
