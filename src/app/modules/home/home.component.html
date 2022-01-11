@@ -1,21 +1,31 @@
-<div class="container-page">
-  <div class="modal-login">
-    <h1 class="title-modal-login">Desbrav Você</h1>
+<div class="container-primary">
+  <div class="container-fluid container-login">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="title-login">DESBRAV & VOCÊ</h1>
+      </div>
+    </div>
     <form class="form-login">
-      <div class="row col-md-10 mt-3">
-        <mat-form-field appearance="fill">
-          <mat-label>Usuário</mat-label>
-          <input matInput placeholder="Digite seu usuário">
-        </mat-form-field>
+      <div class="row">
+        <div class="input-user-name">
+          <mat-form-field appearance="fill">
+            <mat-label>Usuário</mat-label>
+            <input matInput placeholder="Digite seu usuário">
+          </mat-form-field>
+        </div>
       </div>
-      <div class="row col-md-10 mt-1">
-        <mat-form-field appearance="fill">
-          <mat-label>Senha</mat-label>
-          <input matInput placeholder="Digite sua senha">
-        </mat-form-field>
+      <div class="row">
+        <div class="input-user-password">
+          <mat-form-field appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput placeholder="Digite sua senha">
+          </mat-form-field>
+        </div>
       </div>
-      <div class="row col-md-10">
-        <button mat-raised-button>Entrar</button>
+      <div class="row">
+        <div class="col-md-12 p-2 submit-button">
+          <button mat-raised-button>Entrar</button>
+        </div>
       </div>
     </form>
   </div>
