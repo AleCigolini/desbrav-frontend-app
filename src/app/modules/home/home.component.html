@@ -1,32 +1,47 @@
 <div class="container-primary">
-  <div class="container-fluid container-login">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="title-login">DESBRAV & VOCÊ</h1>
+  <div class="logo-company">
+    <h1><img src="../../../assets/img/logo-desbrav.png" alt="teste"></h1>
+  </div>
+  <div class="container-content-data">
+    <div class="container-fluid container-login">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="title-login">{{ 'home-login.title-login' | translate }}</h1>
+        </div>
       </div>
+      <form class="form-login" [formGroup]="formGroup">
+        <div class="row">
+          <div class="input-user-name">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ 'home-login.name-user' | translate }}</mat-label>
+              <input type="text" matInput formControlName="nameUser" placeholder="Digite seu usuário">
+
+              <mat-error>
+                <mat-icon>warning</mat-icon>
+                {{ 'default-messages.field-required' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-user-password">
+            <mat-form-field appearance="fill">
+              <mat-label>{{ 'home-login.password' | translate }}</mat-label>
+              <input type="password" matInput formControlName="password" placeholder="Digite sua senha">
+
+              <mat-error>
+                <mat-icon>warning</mat-icon>
+                {{ 'default-messages.field-required' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 p-2 submit-button">
+            <button mat-raised-button>{{ 'default-buttons.login' | translate }}</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <form class="form-login">
-      <div class="row">
-        <div class="input-user-name">
-          <mat-form-field appearance="fill">
-            <mat-label>Usuário</mat-label>
-            <input matInput placeholder="Digite seu usuário">
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-user-password">
-          <mat-form-field appearance="fill">
-            <mat-label>Senha</mat-label>
-            <input type="password" matInput placeholder="Digite sua senha">
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 p-2 submit-button">
-          <button mat-raised-button>Entrar</button>
-        </div>
-      </div>
-    </form>
   </div>
 </div>

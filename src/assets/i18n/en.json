@@ -1,0 +1,13 @@
+{
+  "home-login": {
+    "title-login": "DESBRAV & YOU",
+    "name-user": "Username",
+    "password": "Password"
+  },
+  "default-messages": {
+    "field-required": "This field is required"
+  },
+  "default-buttons": {
+    "login": "Login"
+  }
+}

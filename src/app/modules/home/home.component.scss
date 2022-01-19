@@ -3,43 +3,60 @@
 .container-primary {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: $color-third;
 
-  .container-login {
-    max-width: 500px;
-    height: 400px;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    background: $color-modal-background;
+  .logo-company {
+    margin: 0 0 0 20px;
+  }
 
-    .title-login {
-      font-size: 28px;
-      color: $color-third;
-      font-weight: $font-bold;
-    }
+  .logo-company h1 img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .form-login {
-      overflow: hidden;
-      margin-top: 30px;
+  .container-content-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-      .submit-button {
-        text-align: right;
+
+    .container-login {
+      max-width: 500px;
+      height: 400px;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      background: $color-modal-background;
+
+      .title-login {
+        font-size: 28px;
+        color: $color-third;
+        font-weight: $font-bold;
       }
 
-      .submit-button button {
-        margin-right: 20px;
-        background-color: $color-third;
-        color: $color-first;
-      }
-    }
+      .form-login {
+        overflow: hidden;
+        margin-top: 30px;
 
-    .form-login mat-form-field {
-      width: 400px;
+        .submit-button {
+          text-align: right;
+        }
+
+        .submit-button button {
+          margin-right: 20px;
+          background-color: $color-third;
+          color: $color-first;
+        }
+
+        .input-user-password {
+          margin-top: 10px;
+        }
+      }
+
+      .form-login mat-form-field {
+        width: 400px;
+      }
     }
   }
 }
