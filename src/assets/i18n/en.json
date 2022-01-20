@@ -9,5 +9,10 @@
   },
   "default-buttons": {
     "login": "Login"
+  },
+  "languages": {
+    "lang": "Language",
+    "pt-br": "Portuguese(Brazil)",
+    "en": "English"
   }
 }

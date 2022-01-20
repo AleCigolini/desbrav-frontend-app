@@ -28,6 +28,7 @@
       border-radius: 10px;
       text-align: center;
       background: $color-modal-background;
+      box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
 
       .title-login {
         font-size: 28px;
@@ -38,6 +39,10 @@
       .form-login {
         overflow: hidden;
         margin-top: 30px;
+
+        .input {
+          width: 400px;
+        }
 
         .submit-button {
           text-align: right;
@@ -52,10 +57,6 @@
         .input-user-password {
           margin-top: 10px;
         }
-      }
-
-      .form-login mat-form-field {
-        width: 400px;
       }
     }
   }

@@ -12,7 +12,7 @@
       <form class="form-login" [formGroup]="formGroup">
         <div class="row">
           <div class="input-user-name">
-            <mat-form-field appearance="fill">
+            <mat-form-field class="input" appearance="fill">
               <mat-label>{{ 'home-login.name-user' | translate }}</mat-label>
               <input type="text" matInput formControlName="nameUser" placeholder="Digite seu usuário">
 
@@ -25,7 +25,7 @@
         </div>
         <div class="row">
           <div class="input-user-password">
-            <mat-form-field appearance="fill">
+            <mat-form-field class="input" appearance="fill">
               <mat-label>{{ 'home-login.password' | translate }}</mat-label>
               <input type="password" matInput formControlName="password" placeholder="Digite sua senha">
 
@@ -36,9 +36,22 @@
             </mat-form-field>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 p-2 submit-button">
-            <button mat-raised-button>{{ 'default-buttons.login' | translate }}</button>
+        <div class="row mt-3">
+          <div class="alter-language col-md-7">
+            <mat-form-field class="select-alter-lang" appearance="fill">
+              <mat-label>{{ 'languages.lang' | translate}}</mat-label>
+              <mat-select>
+                <mat-option [value]="'pt-br'">
+                  {{ 'languages.pt-br' | translate }}
+                </mat-option>
+                <mat-option [value]="'en'">
+                  {{ 'languages.en' | translate }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-5 p-2 submit-button">
+            <button mat-raised-button (click)="userAuthentication()" >{{ 'default-buttons.login' | translate }}</button>
           </div>
         </div>
       </form>
