@@ -1,8 +1,11 @@
 {
-  "home-login": {
+  "login": {
     "title-login": "DESBRAV & VOCÊ",
     "name-user": "Usuário",
     "password": "Senha"
+  },
+  "home": {
+    "title": "Desbrav"
   },
   "default-messages": {
     "field-required": "Este campo é obrigatório"

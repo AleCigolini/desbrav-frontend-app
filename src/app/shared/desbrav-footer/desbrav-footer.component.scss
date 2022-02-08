@@ -1,0 +1,12 @@
+@import '../../layouts/variables.scss';
+
+.desbrav-footer::ng-deep {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  .text-center {
+    background-color: $color-third;
+    color: $color-first;
+  }
+}

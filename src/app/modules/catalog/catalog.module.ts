@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { CatalogComponent } from './catalog.component';
+import { CatalogRoutingModule } from './route/catalog-routing.module';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { CatalogComponent } from './catalog.component';
     CatalogComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CatalogRoutingModule
   ],
   exports: [CatalogComponent]
 })

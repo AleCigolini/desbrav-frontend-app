@@ -1,0 +1,15 @@
+@import '../../layouts/variables.scss';
+
+.desbrav-toolbar {
+
+  mat-toolbar {
+    background-color: $color-third;
+  }
+
+  .title-company {
+    font-size: 30px;
+    font-weight: $font-bold;
+    color: $color-first;
+    cursor: pointer;
+  }
+}
